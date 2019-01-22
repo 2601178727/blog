@@ -12,6 +12,11 @@
 > 定义router.js 文件，默认名称，存放路由规则
 > 定义controller文件夹 控制器容器
 
+##### 创建配置文件
+> 创建config文件夹
+> 新建config.default.js文件
+> exports.keys = 'storage'; 加密cookie
+
 ##### 启动
 > npm run dev
 > 生成public文件夹，存放静态文件
