@@ -1,24 +1,19 @@
-# blog
+#### 创建目录
 
-##### 本地建立远程跟踪
+##### 下载依赖
+> cnpm i egg -S
+> cnpm i egg-bin -D
 
-```
-echo "# blog" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/2601178727/blog.git
-git push -u origin master
-```
+##### 修改配置文件package.json
+> "dev": "egg-bin dev"
 
+##### 跑通路由
+> 定义app文件夹 —— 默认规则，存放项目代码
+> 定义router.js 文件，默认名称，存放路由规则
+> 定义controller文件夹 控制器容器
 
-
-##### 提供后端接口
-
-```
-cnpm i egg-init -g
-egg-init  blog-api --type simple // simple代表最简单的项目
-cd zhufengpeixunblog-api
-cnpm i 
-```
-
+##### 启动
+> npm run dev
+> 生成public文件夹，存放静态文件
+> 生成logs，存放日志
+> 生成run,运行文件

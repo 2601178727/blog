@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "egg-bin dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2601178727/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2601178727/blog/issues"
+  },
+  "homepage": "https://github.com/2601178727/blog#readme",
+  "dependencies": {
+    "egg": "^2.14.2"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.10.0"
+  }
+}
