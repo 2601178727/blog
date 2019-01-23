@@ -22,3 +22,11 @@
 > 生成public文件夹，存放静态文件
 > 生成logs，存放日志
 > 生成run,运行文件
+
+##### 实现爬虫
+
+###### 后端渲染
+> cnpm i egg-view-ejs -S -D // 为egg.js 提供渲染功能
+> config文件夹下 添加plugin.js 配置插件
+> config.default.js 添加引擎配置
+> 添加模板文件夹 view

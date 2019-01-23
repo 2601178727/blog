@@ -8,4 +8,5 @@ module.exports = function (app) {
   const { router, controller } = app;
   // controller.home 对呀controller文件夹下的 home.js
   router.get('/', controller.home.index);
+  router.get('/news', controller.news.index);
 }

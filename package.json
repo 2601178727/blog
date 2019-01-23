@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/2601178727/blog#readme",
   "dependencies": {
-    "egg": "^2.14.2"
+    "egg": "^2.14.2",
+    "egg-view-ejs": "^2.0.0"
   },
   "devDependencies": {
-    "egg-bin": "^4.10.0"
+    "egg-bin": "^4.10.0",
+    "egg-view-ejs": "^2.0.0"
   }
 }
