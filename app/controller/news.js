@@ -1,19 +1,11 @@
 const { Controller } = require('egg');
 
 class NewsController extends Controller {
+  // 一般控制器值处理请求的参数，和返回响应
   async index() {
     let { ctx } = this;
     // 后端渲染 —— 将渲染后的页面发给前台
-    let news = [
-      {
-        title: '为何说中国经济总体平稳、稳中有进',
-        url: 'http://news.cctv.com/2019/01/22/ARTIUWajIiyPLNNMY0Yczjg3190122.shtml'
-      },
-      {
-        title: '习近平向全军老同志祝贺新春',
-        url: 'http://m.news.cctv.com/2019/01/22/ARTIIhofIPE8S6Wsz3ynqKnY190122.shtml'
-      }
-    ];
+    let news = await this.service.news.fetch(); // 拿到service文件夹下 的news文件中的 fetch方法返回的数据
 
     // 异步操作，需要添加await
     await ctx.render('news.ejs', { news });
