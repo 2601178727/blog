@@ -30,3 +30,18 @@
 > config文件夹下 添加plugin.js 配置插件
 > config.default.js 添加引擎配置
 > 添加模板文件夹 view
+
+
+###### 模板语法
+```
+<%
+  news.forEach(item => { %>
+    <li class="list-group-item">
+      <a href="<%=item.url%>">
+        <%=item.title%>
+      </a>
+    </li>
+  <% })
+%>
+```
+> JS部分用<% %>包起来
