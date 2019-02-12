@@ -47,3 +47,14 @@
 > JS部分用<% %>包起来
 
 ###### service
+> 新建service文件夹 创建news.js文件，处理数据获取逻辑
+> controller下的 news.js文件通过 this.service.news.fetch() 或 this.ctx.service.news.fetch() 访问处理后的数据
+
+###### 配置config.default.js 
+```
+exports.news = {
+  url: 'http://news.baidu.com'
+};
+```
+> 之后就可以通过 this.config 访问到配置的数据
+> let { data } = await this.ctx.curl(this.config.news.url); 

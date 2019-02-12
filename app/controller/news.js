@@ -5,7 +5,7 @@ class NewsController extends Controller {
   async index() {
     let { ctx } = this;
     // 后端渲染 —— 将渲染后的页面发给前台
-    let news = await this.service.news.fetch(); // 拿到service文件夹下 的news文件中的 fetch方法返回的数据
+    let news = await ctx.service.news.fetch(); // 拿到service文件夹下 的news文件中的 fetch方法返回的数据
 
     // 异步操作，需要添加await
     await ctx.render('news.ejs', { news });

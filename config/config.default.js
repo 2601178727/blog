@@ -6,3 +6,7 @@ exports.view = {
     '.ejs': 'ejs'
   }
 };
+
+exports.news = {
+  url: 'http://news.baidu.com'
+};

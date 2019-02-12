@@ -2,8 +2,9 @@ const { Service } = require('egg');
 
 class NewsService extends Service{
   // egg.js里内置了一个方法 用来读取远程接口数据
+  // config挂载在 this上
   async fetch() {
-    let { data } = await this.ctx.curl('http://news.baidu.com');
+    let { data } = await this.ctx.curl(this.config.news.url);
     data = data.toString(); // 此时拿到的是网易源代码
     return [
       {
